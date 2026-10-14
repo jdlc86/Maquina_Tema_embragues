@@ -12,7 +12,7 @@ Proyecto docente de **100 diapositivas de nivel máster**, basado en *Teoría de
 
 1. Conecta Codex a `jdlc86/Maquina_Tema_embragues`.
 2. Abre `docs/CODEX_MASTER_PROMPT.md` y envía su instrucción a Codex (o dile «Sigue el prompt maestro»).
-3. Proporciona en el entorno de Codex el libro **de forma privada** en `inputs_privados/Teoria de Máquinas Salvador Cardona.pdf` (no está versionado).
+3. Antes de subir el libro, convierte el repositorio a **Private** y verifica los permisos de uso; después sube `inputs_privados/Teoria de Máquinas Salvador Cardona.pdf`. Sube también tu plantilla a `07_plantillas/plantilla_master.pptx`. Véase `docs/ARRANQUE_CODEX.md`.
 4. Ejecuta `python -m pip install -r requirements-codex.txt` y `python scripts/comprobar_entorno_codex.py`.
 5. El agente desarrolla el generador, prepara tres diapositivas piloto y luego produce las 100, validando cada lote.
 
@@ -36,3 +36,9 @@ El repositorio **es público**: nunca subas el PDF ni los recortes originales, n
 Las figuras y fórmulas originales se insertan como **recortes del PDF**. Las explicaciones deben reproducir exactamente los símbolos de cada fórmula visible; cada recorte de ecuación tendrá diccionario de notación validado. Los nuevos desarrollos matemáticos se identificarán como ampliaciones y no se atribuirán al autor. Las imágenes de fórmulas no son editables símbolo a símbolo: los textos explicativos sí deben serlo.
 
 **Estado:** entorno y encargo de Codex preparados; PowerPoint de 100 diapositivas aún no generado.
+
+## Subida de entradas de Codex
+
+- [Carpeta del libro](inputs_privados/) — no subir el PDF mientras el repositorio sea público.
+- [Carpeta de la plantilla PowerPoint](07_plantillas/).
+- [Instrucciones de conexión y carga](docs/ARRANQUE_CODEX.md).
