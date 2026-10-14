@@ -1,1 +1,4 @@
 id,titulo,estado,documento_maestro,fuente_verificada,figura_verificada,ecuacion_verificada,gemini_generada,editabilidad_verificada,observaciones
+D001,El embrague en la cadena cinemática,piloto_pendiente_gemini,03_documentos_maestros/D001.md,si,no_aplica,no_aplica,no,no,Esquema conceptual original; validar salida de Gemini
+D028,Embrague cónico: disposición,piloto_pendiente_gemini,03_documentos_maestros/D028.md,si,figura_7_18_revisada,no_aplica,no,no,Requiere contraste geométrico de figura generada
+D043,Geometría: radios interior y exterior,piloto_pendiente_gemini,03_documentos_maestros/D043.md,parcial_ampliacion,pendiente_gemini,si,no,no,Comprobar editabilidad de ecuaciones
