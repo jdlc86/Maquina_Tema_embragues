@@ -12,7 +12,7 @@ Producir una presentación PowerPoint profesional de **100 diapositivas**, nivel
 - Evitar que la presión/desgaste uniforme, par de fricción/enlace o número de superficies activas se confundan en las deducciones.
 
 ## Privacidad
-Este repositorio es público. No subir el libro PDF ni sus recortes, imágenes o derivados extensivos al repositorio público. Utilizar `inputs_privados/` como ubicación local ignorada por Git. No insertar las imágenes en Markdown versionado. El archivo PPTX final puede contener material protegido: distribuir solo por un canal permitido.
+El repositorio es público hasta que el usuario lo convierta explícitamente a PRIVATE. No subir el libro, recortes originales o PPTX con imágenes protegidas mientras sea público. Cuando sea PRIVADO y existan derechos/autorización adecuados, el usuario puede incorporar el libro en `inputs_privados/Teoria de Máquinas Salvador Cardona.pdf` a GitHub; Codex lo encontrará mediante checkout del repositorio privado. La privacidad del repositorio no sustituye la autorización de uso. No republicar material en PR, artefactos o releases públicos.
 
 ## Formato, alcance y calidad
 - **Exactamente 100 diapositivas** y orden D001–D100; no 99, 101 ni slides de relleno.
@@ -24,4 +24,4 @@ Este repositorio es público. No subir el libro PDF ni sus recortes, imágenes o
 - Hacer 3 pilotos D001, D028, D043 y validarlos visual/técnicamente antes de producir las 100.
 
 ## Comportamiento autónomo de Codex
-Puedes añadir código, tests, documentos maestros, plantillas y scripts de render/QA. Ejecuta pruebas y genera informes. No hagas deploy. No elimines material del repositorio sin justificación. Proponer PR antes de integrar cambios amplios. Si falta el PDF, informar de la ruta exacta esperada y detener el análisis dependiente del libro, sin sustituirlo por información inventada.
+Puedes añadir código, tests, documentos maestros, plantillas y scripts de render/QA. Ejecuta pruebas y genera informes. No hagas deploy. No elimines material del repositorio sin justificación. Proponer PR antes de integrar cambios amplios. Primero verificar la existencia del libro en `inputs_privados/Teoria de Máquinas Salvador Cardona.pdf` y de la plantilla en `07_plantillas/plantilla_master.pptx`. Si falta el PDF, informar de la ruta exacta esperada y detener el análisis dependiente del libro, sin sustituirlo por información inventada.
