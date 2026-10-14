@@ -1,23 +1,38 @@
 # Teoría de Máquinas — Embragues
 
-Proyecto de **100 diapositivas de nivel máster**, producidas **una por una en Gemini Slides** a partir de documentos maestros autocontenidos.
+Proyecto docente de **100 diapositivas de nivel máster**, basado en *Teoría de máquinas* de Salvador Cardona y ampliaciones técnicas identificadas.
 
-## Estado
-El libro de referencia es *Teoría de máquinas* de Salvador Cardona (PDF de 253 páginas conservado en la biblioteca del usuario). La planificación incluye contenido del libro y **ampliaciones técnicas explícitamente diferenciadas**. El índice es una propuesta de trabajo, no la estructura literal del libro.
+## Dos workflows, una fuente común
 
-## Flujo
-1. Consultar la fuente original y verificar texto, fórmula y figura visualmente.
-2. Redactar `03_documentos_maestros/DNNN.md` con contenido literal, diseño y un bloque completo «COPIAR EN GEMINI».
-3. Generar exactamente **una** diapositiva con Gemini Slides.
-4. Revisar física, fórmulas, legibilidad y editabilidad real del archivo exportado.
-5. Registrar la revisión y pasar a la siguiente.
+**Workflow Codex (principal de producción):** generar un PowerPoint completo de 100 diapositivas con textos/elementos editables y recortes auténticos de fórmulas y figuras del libro. Instrucciones: [docs/CODEX_MASTER_PROMPT.md](docs/CODEX_MASTER_PROMPT.md).
 
-## Archivos
-- `00_configuracion/manual_visual.md`: sistema visual y editabilidad.
-- `00_configuracion/plantilla_documento_maestro.md`: contrato por diapositiva.
-- `01_fuentes/trazabilidad_libro.md`: relación con el PDF.
-- `02_planificacion/indice_100_diapositivas.md`: hoja de ruta.
-- `06_validacion/registro_revision.csv`: registro de producción.
+**Workflow Gemini (alternativo):** producir una diapositiva cada vez a partir de los documentos maestros en `03_documentos_maestros/`.
 
-## Política de evidencia
-Nunca atribuir al libro resultados que no aparecen en él. Las ampliaciones requerirán demostración, bibliografía técnica o ambas. El texto extraído del PDF puede contener caracteres erróneos en ecuaciones; comprobar sobre la página representada antes de publicar una fórmula.
+## Inicio con Codex
+
+1. Conecta Codex a `jdlc86/Maquina_Tema_embragues`.
+2. Abre `docs/CODEX_MASTER_PROMPT.md` y envía su instrucción a Codex (o dile «Sigue el prompt maestro»).
+3. Proporciona en el entorno de Codex el libro **de forma privada** en `inputs_privados/Teoria de Máquinas Salvador Cardona.pdf` (no está versionado).
+4. Ejecuta `python -m pip install -r requirements-codex.txt` y `python scripts/comprobar_entorno_codex.py`.
+5. El agente desarrolla el generador, prepara tres diapositivas piloto y luego produce las 100, validando cada lote.
+
+El repositorio **es público**: nunca subas el PDF ni los recortes originales, ni un PPTX que incluya dichas imágenes, a los commits o artefactos públicos. `.gitignore` bloquea ubicaciones habituales, pero no sustituye la comprobación de los archivos antes del commit.
+
+## Archivos principales
+
+- `AGENTS.md` — reglas que debe respetar Codex.
+- `docs/CODEX_MASTER_PROMPT.md` — encargo exhaustivo de ejecución.
+- `requirements-codex.txt` — dependencias de producción.
+- `scripts/comprobar_entorno_codex.py` — comprobación de entorno y acceso al libro.
+- `scripts/extraer_figuras.py` — extractor inicial reproducible de figuras.
+- `04_recursos_graficos/recortes.json` — manifiesto de recortes.
+- `00_configuracion/` — manual visual y política de imágenes.
+- `02_planificacion/indice_100_diapositivas.md` — propuesta de D001 a D100.
+- `03_documentos_maestros/` — especificaciones por diapositiva.
+- `06_validacion/` — seguimiento de revisión.
+
+## Fidelidad al libro y notación
+
+Las figuras y fórmulas originales se insertan como **recortes del PDF**. Las explicaciones deben reproducir exactamente los símbolos de cada fórmula visible; cada recorte de ecuación tendrá diccionario de notación validado. Los nuevos desarrollos matemáticos se identificarán como ampliaciones y no se atribuirán al autor. Las imágenes de fórmulas no son editables símbolo a símbolo: los textos explicativos sí deben serlo.
+
+**Estado:** entorno y encargo de Codex preparados; PowerPoint de 100 diapositivas aún no generado.
