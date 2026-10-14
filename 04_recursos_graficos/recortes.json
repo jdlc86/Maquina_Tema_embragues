@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "source": "Teoria de Máquinas Salvador Cardona.pdf",
+  "notes": "pdf_page corresponde al número 1-based dentro del PDF; printed_page es la página impresa. bbox_norm = [x0,y0,x1,y1] relativo al tamaño de página. Recortes revisados visualmente.",
+  "figures": [
+    {
+      "id": "fig7_18_completa",
+      "pdf_page": 178,
+      "printed_page": 178,
+      "figure": "7.18",
+      "bbox_norm": [
+        0.19,
+        0.438,
+        0.805,
+        0.653
+      ],
+      "file": "fig7_18_completa.png",
+      "usage": "D026"
+    },
+    {
+      "id": "fig7_18_disco",
+      "pdf_page": 178,
+      "printed_page": 178,
+      "figure": "7.18 izquierda",
+      "bbox_norm": [
+        0.196,
+        0.445,
+        0.34,
+        0.629
+      ],
+      "file": "fig7_18_disco.png",
+      "usage": "D027"
+    },
+    {
+      "id": "fig7_18_conico",
+      "pdf_page": 178,
+      "printed_page": 178,
+      "figure": "7.18 central",
+      "bbox_norm": [
+        0.356,
+        0.44,
+        0.534,
+        0.626
+      ],
+      "file": "fig7_18_conico.png",
+      "usage": "D028"
+    },
+    {
+      "id": "fig7_18_centrifugo",
+      "pdf_page": 178,
+      "printed_page": 178,
+      "figure": "7.18 derecha",
+      "bbox_norm": [
+        0.574,
+        0.439,
+        0.806,
+        0.634
+      ],
+      "file": "fig7_18_centrifugo.png",
+      "usage": "D029"
+    }
+  ]
+}
