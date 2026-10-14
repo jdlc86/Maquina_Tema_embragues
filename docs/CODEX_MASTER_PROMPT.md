@@ -7,14 +7,14 @@ No debes limitarte a escribir un plan: desarrolla el generador, completa los doc
 
 ## Entrada y fuentes
 1. Repositorio: `jdlc86/Maquina_Tema_embragues`.
-2. Fuente principal: *Teoría de máquinas* de Salvador Cardona, proporcionado **privadamente** en `inputs_privados/Teoria de Máquinas Salvador Cardona.pdf`. El libro no está en GitHub por razones de derechos de autor. Si falta, solicita adjuntarlo o montarlo en esa ruta y no atribuyas al libro contenidos que no puedas verificar.
+2. Fuente principal: *Teoría de máquinas* de Salvador Cardona, proporcionado **privadamente** en `inputs_privados/Teoria de Máquinas Salvador Cardona.pdf`. El usuario prevé subir el libro a `inputs_privados/` en GitHub **solo después de cambiar el repositorio a privado y comprobar los permisos de uso**. Si falta, solicita adjuntarlo o montarlo privadamente en esa ruta y no atribuyas al libro contenidos que no puedas verificar.
 3. Índice inicial: `02_planificacion/indice_100_diapositivas.md`. Contiene D001–D100; considera títulos y anclajes **provisionales** y conserva la distinción entre contenido Cardona y ampliación.
 4. Manual de diseño: `00_configuracion/manual_visual.md`.
 5. Política de imágenes: `00_configuracion/politica_figuras_originales.md`.
 6. Plantilla de documentos maestros: `00_configuracion/plantilla_documento_maestro.md`.
 7. Herramienta inicial para recortes: `scripts/extraer_figuras.py` y `04_recursos_graficos/recortes.json`.
 8. Pilotos existentes: `03_documentos_maestros/D001.md`, `D028.md`, `D043.md` (necesitan adaptación/validación). No tomes los pilotos como correctos por defecto.
-9. **Plantilla PPTX**: si el usuario facilita una, úsala; en otro caso crea una plantilla programática en estilo técnico-profesional, 16:9, fondo claro, azul grafito, tipografía legible. Todos los elementos del sistema de diseño han de ser reproducibles desde código.
+9. **Plantilla PPTX**: buscar primero `07_plantillas/plantilla_master.pptx`, que el usuario subirá a GitHub. Si está presente, úsala; en otro caso crea una plantilla programática en estilo técnico-profesional, 16:9, fondo claro, azul grafito, tipografía legible. Todos los elementos del sistema de diseño han de ser reproducibles desde código.
 
 ## Puntos críticos y controles obligatorios
 
@@ -63,8 +63,8 @@ Renderizar diapositivas a PNG/PDF, crear mosaicos por lotes de 10 y revisar visu
 **Fase E. Entrega:** facilitar el PowerPoint final como artefacto de trabajo por canal autorizado (no exponer recortes protegidos públicamente); subir código, metadatos **sin imágenes protegidas** y documentación al repositorio mediante una PR.
 
 ## Restricciones de flujo GitHub
-- El repositorio es público. NO subir el libro ni recortes de ecuaciones/figuras a un commit, PR, issue público, artefacto público o Pages.
-- No publicar el PPTX con recortes originales en GitHub público. Entregarlo mediante la sesión/archivo privado habilitado.
+- El repositorio es público hasta su conversión explícita a privado. NO subir el libro ni recortes de ecuaciones/figuras a un repositorio, PR, issue, artefacto o Pages público. Si el usuario transforma el repositorio a privado y tiene autorización, el libro puede estar versionado en `inputs_privados/`, accesible a Codex por checkout autenticado.
+- No publicar el PPTX con recortes originales en GitHub público. Entregarlo mediante la sesión/archivo privado habilitado. Verificar visibilidad efectiva del repositorio antes de cualquier subida de material de terceros.
 - El material bibliográfico privado solo reside en directorios ignorados por Git (`inputs_privados/` y `04_recursos_graficos/recortes/`).
 - No crear 100 diapositivas ficticias si no está disponible el libro. Detenerse y pedirlo; no inventar evidencia.
 
