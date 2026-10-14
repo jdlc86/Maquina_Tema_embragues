@@ -1,0 +1,24 @@
+# Material bibliográfico privado; nunca publicar PDF ni imágenes originales del libro
+/01_fuentes/privado/
+/inputs_privados/
+/private_sources/
+/04_recursos_graficos/recortes/
+/04_recursos_graficos/ecuaciones_recortadas/
+*.pdf
+*.PDF
+
+# Archivos transitorios
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Resultados generados (entregar como artefactos de CI o manualmente)
+/build/
+/dist/
+/output/
+/09_resultados/
